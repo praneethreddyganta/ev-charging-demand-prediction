@@ -28,7 +28,7 @@ Given a dataset that includes date, county, state, vehicle type, and counts of r
 
 ## What’s Included
 
-- `project_notebook.ipynb`: The Colab notebook with data cleaning, exploration, and preprocessing.
+- `EV_Vehicle_Charging_Demand_Prediction-3.ipynb`: The Colab notebook with data cleaning, exploration, and preprocessing.
 - `ev_charging_data.csv`: The dataset used for analysis.
 
 ## Steps Performed
