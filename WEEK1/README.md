@@ -1,77 +1,58 @@
-EV Charging Demand Prediction
-EV_Vehicle_Charging_Demand_Prediction
+# EV Charging Demand Prediction
 
-📊 Project Overview
-This project focuses on analyzing electric vehicle (EV) registration data to understand EV adoption trends and charging demand. The cleaned dataset forms the basis for forecasting models in later phases of the project.
+**EV_Vehicle_Charging_Demand_Prediction**
 
-🚧 Problem Statement
-Given a dataset containing location-wise EV registrations, the objective is to analyze patterns, clean inconsistencies, and prepare the data for use in future predictive models.
+---
 
-📁 Dataset Description
-Source: Kaggle – Electric Vehicle Population Size 2024
+## 📊 Project Overview
 
-Important Columns:
+This project focuses on analyzing electric vehicle (EV) registration data to understand EV adoption trends and charging demand. Cleaned data from this step is used for forecasting in Week 2.
 
-Date
+---
 
-County
+## 🚧 Problem Statement
 
-State
+Given a dataset containing location-wise EV registrations, our goal is to analyze patterns, clean inconsistencies, and make the data ready for future prediction models.
 
-Vehicle Type (Passenger/Truck)
+---
 
-Battery Electric Vehicles (BEVs)
+## 📁 Dataset Description
 
-Plug-in Hybrid Electric Vehicles (PHEVs)
+- **Source:** [Kaggle – Electric Vehicle Population Size 2024]
+- **Important Columns:**
+  - Date
+  - County
+  - State
+  - Vehicle Type (Passenger/Truck)
+  - Battery Electric Vehicles (BEVs)
+  - Plug-in Hybrid Electric Vehicles (PHEVs)
+  - EV Total, Non-EV Total, Total Vehicles
+  - Percent Electric Vehicles
 
-EV Total
+---
 
-Non-EV Total
+## 📦 What’s Included
 
-Total Vehicles
+- `EV_Vehicle_Charging_Demand_Prediction.ipynb`: Data cleaning and EDA notebook  
+- `ev_charging_data.csv`: Raw EV dataset used for cleaning  
+- `README.md`: Project documentation for Week 1
 
-Percent Electric Vehicles
+---
 
-📦 What’s Included
-EV_Vehicle_Charging_Demand_Prediction.ipynb: Jupyter notebook for data cleaning and exploratory data analysis (EDA)
+## ✅ Steps Performed
 
-ev_charging_data.csv: Raw EV dataset used for cleaning and analysis
+- Loaded dataset and explored basic info  
+- Checked and filled missing values  
+- Handled outliers using IQR technique  
+- Performed basic data visualization  
+- Saved cleaned dataset for next week's forecasting
 
-README.md: Project documentation (this file) for Week 1
+---
 
-✅ Steps Performed
-Loaded dataset and explored basic information
+## 📂 Project Structure
 
-Checked for and filled missing values
-
-Handled outliers using the IQR technique
-
-Performed basic data visualization to uncover trends
-
-Saved cleaned dataset for use in next week’s forecasting and modeling
-
-📂 Project Structure
-bash
+```bash
 week1/
 ├── EV_Vehicle_Charging_Demand_Prediction.ipynb
 ├── ev_charging_data.csv
 └── README.md
-🚀 How to Use
-Clone or download the repository.
-
-Navigate to the week1/ folder.
-
-Open EV_Vehicle_Charging_Demand_Prediction.ipynb with Google Colab or Jupyter Notebook.
-
-Upload ev_charging_data.csv when prompted.
-
-Run the notebook cells sequentially to analyze EV registration trends and clean the data.
-
-🙌 Acknowledgements
-Internship: AICTE Skill4Future
-
-Mentor: Raghunandan Sir
-
-Dataset: Kaggle – Electric Vehicle Population Dataset
-
-Tools Used: Python, Pandas, Matplotlib, Google Colab
