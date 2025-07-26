@@ -1,9 +1,3 @@
-
----
-
-## ✅ WEEK 2 — `week2/README.md`
-
-```markdown
 # EV Adoption Forecasting
 
 **EV_Adoption_Forecasting**
@@ -12,66 +6,71 @@
 
 ## Project Overview
 
-This project is a continuation of Week 1's work and focuses on forecasting the adoption of electric vehicles using machine learning. Based on the cleaned EV registration dataset, we apply data preprocessing, build a Linear Regression model, and visualize future trends in EV adoption across regions.
+This project is a continuation of Week 1's work and focuses on forecasting the future adoption of electric vehicles (EVs) using machine learning. Leveraging the cleaned dataset created in Week 1, we perform feature engineering and train a Linear Regression model to visualize upcoming EV trends across regions. This supports long-term infrastructure planning like EV charging stations.
 
 ---
 
 ## Problem Statement
 
-Given a preprocessed dataset of electric vehicle registrations, the objective is to predict the number or proportion of electric vehicles in the future. The goal is to assist governments and urban planners with insight on infrastructure requirements like public EV charging stations.
+Using historical EV registration data, the objective is to predict the percentage of electric vehicles over time. This helps planners and governments anticipate demand for EV infrastructure, incentives, and energy distribution.
 
 ---
 
 ## Dataset Description
 
-- **Source:** Cleaned and prepared data from Week 1  
+- **Source:** Cleaned dataset from Week 1  
 - **Format:** CSV  
-- **Target Variable:** Percent Electric Vehicles
+- **Features/Columns Include:**
+  - Date
+  - County
+  - State
+  - Battery Electric Vehicles (BEVs)
+  - Plug-In Hybrid Electric Vehicles (PHEVs)
+  - Electric Vehicle (EV) Total
+  - Non-Electric Vehicle Total
+  - Total Vehicles
+  - Percent of Electric Vehicles (Target)
 
 ---
 
 ## What’s Included
 
-- `EV_Adoption_Forecasting.ipynb` – Jupyter/Colab notebook that contains the forecasting model and visualizations  
-- `preprocessed_ev_data.csv` – Cleaned dataset used to train the model  
-- `forecasting_ev_model.pkl` – Serialized model saved using Pickle  
-- `README.md` – This documentation file for Week 2
+- `EV_Adoption_Forecasting.ipynb` – Notebook with forecasting model, data preprocessing, and results  
+- `preprocessed_ev_data.csv` – Cleaned dataset output from Week 1  
+- `forecasting_ev_model.pkl` – Trained regression model serialized using Pickle  
+- `README.md` – This file (documentation for Week 2 work)
 
 ---
 
 ## Steps Performed
 
-- Imported and split the dataset  
-- Performed feature selection and transformation  
-- Trained a Linear Regression model  
-- Visualized predictions using Matplotlib  
-- Saved the trained model as `.pkl` for future use or deployment
+- Loaded cleaned dataset from Week 1  
+- Conducted data preprocessing and transformation  
+- Performed train-test split  
+- Trained Linear Regression model on target feature  
+- Visualized model performance and predictions  
+- Serialized the trained model using Pickle for future reuse
 
 ---
 
 ## How to Use
 
-1. Download or clone this repository.
-2. Open `EV_Adoption_Forecasting.ipynb` using Google Colab or Jupyter.
+1. Download the notebook, dataset, and `.pkl` model file.
+2. Open `EV_Adoption_Forecasting.ipynb` in [Google Colab](https://colab.research.google.com/) or Jupyter Notebook.
 3. Upload the `preprocessed_ev_data.csv` file when prompted.
-4. Run each cell in sequence to reproduce the forecast results.
-5. Use the saved model (`.pkl`) for inference in external applications.
+4. Run all notebook cells to visualize forecast results.
+5. Use the `forecasting_ev_model.pkl` model in other apps or dashboards for predictions.
 
 ---
 
 ## Acknowledgements
 
-- **Internship:** AICTE Skill4Future Internship  
-- **Data Source:** Prepared dataset from Week 1 (originally from Kaggle)  
-- **Mentor & Guidance:** Raghunandan Sir’s GitHub repositories and reference code
+- **Dataset Source:** Prepared from Week 1 Dataset (originally from [Kaggle – EV Population Size 2024])  
+- **Guidance & Curriculum:** AICTE Skill4Future Internship  
+- **Mentor Reference:** Raghunandan Sir's GitHub repositories and walkthroughs
 
----
-
-## 📂 Project Structure
-
-```bash
 week2/
-├── EV_Adoption_Forecasting.ipynb
-├── preprocessed_ev_data.csv
-├── forecasting_ev_model.pkl
-└── README.md
+├── EV_Adoption_Forecasting.ipynb       # Colab/Jupyter notebook for training & forecasting
+├── preprocessed_ev_data.csv            # Cleaned dataset used as input
+├── forecasting_ev_model.pkl            # Trained Linear Regression model (Pickle)
+└── README.md                           # Week 2 documentation
