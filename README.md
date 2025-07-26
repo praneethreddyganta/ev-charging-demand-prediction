@@ -2,9 +2,6 @@
 
 **EV_Vehicle_Charging_Demand_Prediction**
 
-**Week 1 Project Submission**  
-**Date:** Saturday, July 19, 2025
-
 ## Project Overview
 This project aims to forecast electric vehicle (EV) adoption and charging demand based on registration data across regions. The analysis helps urban planners and policymakers anticipate infrastructure needs and plan more efficient EV charging networks.
 
