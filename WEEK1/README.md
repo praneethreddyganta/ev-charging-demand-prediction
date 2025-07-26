@@ -57,24 +57,6 @@ week1/
 ├── ev_charging_data.csv
 └── README.md
 
-## How To Use
 
-'''bash
-
-1. Clone or download the repository.
-2. Navigate to the `week1/` folder.
-3. Open the `.ipynb` file in Google Colab or Jupyter Notebook.
-4. Upload `ev_charging_data.csv` when prompted.
-5. Run the notebook to analyze EV registration trends and clean the data.
-6. Leverage any additional files/scripts to extend or customize your analysis.
-
----
-
-## 🙌 Acknowledgements
-''' bash
-- Internship: AICTE Skill4Future
-- Mentor: Raghunandan Sir
-- Dataset: Kaggle – Electric Vehicle Population Dataset
-- Tools Used: Python, Pandas, Matplotlib, Google Colab
 
 
