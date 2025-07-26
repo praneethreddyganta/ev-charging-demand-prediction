@@ -22,26 +22,19 @@ This project focuses on analyzing electric vehicle (EV) registration data across
 
 - **Source:** Kaggle – Electric Vehicle Population Size 2024 Dataset
 - **Features:**
-  - Date
-  - County
-  - State
+  - Date, County, State
   - Vehicle Primary Use
-  - BEVs (Battery Electric Vehicles) Count
-  - PHEVs (Plug-In Hybrid Electric Vehicles) Count
-  - Electric Vehicle (EV) Total
-  - Non-Electric Vehicle Total
-  - Total Vehicles
-  - Percent Electric Vehicles
+  - BEV and PHEV counts
+  - EV Total, Non-EV Total, Percent EVs
 
 ---
 
 ## 🛠 Steps Performed
 
-- Loaded and explored the dataset
-- Handled missing values (categorical columns filled with `'Unknown'`)
-- Analyzed dataset summary and distribution
-- Detected and capped outliers using IQR in the `Percent Electric Vehicles` column
-- Prepared the data for Week 2 modeling
+- Data loading and inspection
+- Handling missing values
+- Outlier detection and capping using IQR
+- Data preparation for modeling
 
 ---
 
