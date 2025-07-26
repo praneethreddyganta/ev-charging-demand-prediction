@@ -43,6 +43,7 @@ Given a preprocessed dataset of electric vehicle registrations, the objective is
 
 ---
 
+
 ## How to Use
 
 1. Download or clone this repository.
@@ -53,8 +54,20 @@ Given a preprocessed dataset of electric vehicle registrations, the objective is
 
 ---
 
+
 ## Acknowledgements
 
 - **Internship:** AICTE Skill4Future Internship
 - **Data Source:** Prepared dataset from Week 1 (originally from Kaggle)
 - **Mentor & Guidance:** Raghunandan Sir’s GitHub repositories and reference code
+
+
+## 📂 Project Structure
+
+```bash
+week2/
+├── EV_Adoption_Forecasting.ipynb
+├── preprocessed_ev_data.csv
+├── forecasting_ev_model.pkl
+└── README.md
+
