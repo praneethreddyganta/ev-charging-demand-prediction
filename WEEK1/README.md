@@ -57,9 +57,9 @@ week1/
 ├── ev_charging_data.csv
 └── README.md
 
----
+## How To Use
 
-## 🚀 How to Use
+'''bash
 
 1. Clone or download the repository.
 2. Navigate to the `week1/` folder.
@@ -71,7 +71,7 @@ week1/
 ---
 
 ## 🙌 Acknowledgements
-
+''' bash
 - Internship: AICTE Skill4Future
 - Mentor: Raghunandan Sir
 - Dataset: Kaggle – Electric Vehicle Population Dataset
