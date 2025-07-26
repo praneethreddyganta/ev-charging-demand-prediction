@@ -1,45 +1,44 @@
-
----
-
-## ✅ 📁 `week2/README.md`
-
-```markdown
 # Week 2 – EV Adoption Forecasting
 
-**File:** `EV_Adoption_Forecasting.ipynb`
+**Notebook:** `EV_Adoption_Forecasting.ipynb`
 
 ---
 
 ## 🎯 Objective
 
-To forecast electric vehicle (EV) adoption using historical EV registration data with a machine learning model. This is a continuation of Week 1 where data was cleaned and prepared.
+To forecast electric vehicle (EV) adoption using historical registration data by building a machine learning model. This week builds upon Week 1 by transforming the cleaned data into meaningful predictions.
 
 ---
 
 ## 📁 Files Included
-- `EV_Adoption_Forecasting.ipynb`: Notebook for feature engineering, model training, and forecasting
-- `preprocessed_ev_data.csv`: Cleaned dataset after Week 1
-- `forecasting_ev_model.pkl`: Trained machine learning model saved using Pickle
+
+- `EV_Adoption_Forecasting.ipynb` – Jupyter Notebook with complete code and results
+- `preprocessed_ev_data.csv` – Cleaned dataset used for modeling
+- `forecasting_ev_model.pkl` – Trained model saved using `pickle`
+- `README.md` – Project description and documentation
 
 ---
 
 ## 🛠 Methods Used
-- Feature Engineering and Data Preprocessing
+
+- Data Preprocessing & Feature Engineering
 - Train-Test Split
 - Linear Regression Model
-- Model Serialization using `pickle`
-- Visualization of Forecasted Trends
+- Model Evaluation
+- Forecast Visualization
+- Model Serialization (`pickle`)
 
 ---
 
 ## 🔍 Results
-- Model trained and tested
-- Forecast of EV demand visualized
-- Model saved for future deployment
+
+- Successfully trained a regression model
+- Visualized EV adoption trends
+- Saved the trained model for reuse or deployment
 
 ---
 
-## 🗂 Project Structure
+## 📂 Project Structure
 
 ```bash
 week2/
@@ -47,3 +46,4 @@ week2/
 ├── preprocessed_ev_data.csv
 ├── forecasting_ev_model.pkl
 └── README.md
+
