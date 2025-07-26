@@ -1,49 +1,60 @@
-# Week 2 – EV Adoption Forecasting
+# EV Adoption Forecasting
 
-**Notebook:** `EV_Adoption_Forecasting.ipynb`
-
----
-
-## 🎯 Objective
-
-To forecast electric vehicle (EV) adoption using historical registration data by building a machine learning model. This week builds upon Week 1 by transforming the cleaned data into meaningful predictions.
+**EV_Adoption_Forecasting**
 
 ---
 
-## 📁 Files Included
+## Project Overview
 
-- `EV_Adoption_Forecasting.ipynb` – Jupyter Notebook with complete code and results
-- `preprocessed_ev_data.csv` – Cleaned dataset used for modeling
-- `forecasting_ev_model.pkl` – Trained model saved using `pickle`
-- `README.md` – Project description and documentation
+This project is a continuation of Week 1's work and focuses on forecasting the adoption of electric vehicles using machine learning. Based on the cleaned EV registration dataset, we apply data preprocessing, build a Linear Regression model, and visualize future trends in EV adoption across regions.
 
 ---
 
-## 🛠 Methods Used
+## Problem Statement
 
-- Data Preprocessing & Feature Engineering
-- Train-Test Split
-- Linear Regression Model
-- Model Evaluation
-- Forecast Visualization
-- Model Serialization (`pickle`)
+Given a preprocessed dataset of electric vehicle registrations, the objective is to predict the number or proportion of electric vehicles in the future. The goal is to assist governments and urban planners with insight on infrastructure requirements like public EV charging stations.
 
 ---
 
-## 🔍 Results
+## Dataset Description
 
-- Successfully trained a regression model
-- Visualized EV adoption trends
-- Saved the trained model for reuse or deployment
+- **Source:** Cleaned and prepared data from Week 1
+- **Format:** CSV
+- **Target Variable:** Percent Electric Vehicles
 
 ---
 
-## 📂 Project Structure
+## What’s Included
 
-```bash
-week2/
-├── EV_Adoption_Forecasting.ipynb
-├── preprocessed_ev_data.csv
-├── forecasting_ev_model.pkl
-└── README.md
+- `EV_Adoption_Forecasting.ipynb` – Jupyter/Colab notebook that contains the forecasting model and visualizations
+- `preprocessed_ev_data.csv` – Cleaned dataset used to train the model
+- `forecasting_ev_model.pkl` – Serialized model saved using Pickle
+- `README.md` – This documentation file for Week 2
 
+---
+
+## Steps Performed
+
+- Imported and split the dataset
+- Performed feature selection and transformation
+- Trained a Linear Regression model
+- Visualized predictions using Matplotlib
+- Saved the trained model as `.pkl` for future use or deployment
+
+---
+
+## How to Use
+
+1. Download or clone this repository.
+2. Open `EV_Adoption_Forecasting.ipynb` using Google Colab or Jupyter.
+3. Upload the `preprocessed_ev_data.csv` file when prompted.
+4. Run each cell in sequence to reproduce the forecast results.
+5. Use the saved model (`.pkl`) for inference in external applications.
+
+---
+
+## Acknowledgements
+
+- **Internship:** AICTE Skill4Future Internship
+- **Data Source:** Prepared dataset from Week 1 (originally from Kaggle)
+- **Mentor & Guidance:** Raghunandan Sir’s GitHub repositories and reference code
