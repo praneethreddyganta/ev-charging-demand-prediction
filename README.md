@@ -1,76 +1,119 @@
-# EV Adoption Forecasting
+# EV Charging Demand Prediction – Full Project
 
-**EV_Adoption_Forecasting**
+**EV_Vehicle_Charging_Demand_Prediction + EV_Adoption_Forecasting**
 
 ---
 
 ## Project Overview
 
-This project is a continuation of Week 1's work and focuses on forecasting the future adoption of electric vehicles (EVs) using machine learning. Leveraging the cleaned dataset created in Week 1, we perform feature engineering and train a Linear Regression model to visualize upcoming EV trends across regions. This supports long-term infrastructure planning like EV charging stations.
+This project was developed as part of the **AICTE Skill4Future Internship** and aims to analyze and forecast electric vehicle (EV) adoption and charging demand using real-world registration data.  
+The project is divided into two phases:
+
+- **Week 1:** Data Cleaning, Analysis, and Preparation  
+- **Week 2:** Forecasting EV Adoption using Machine Learning  
+
+The goal is to support better planning for EV infrastructure like charging stations and policy decisions.
 
 ---
 
 ## Problem Statement
 
-Using historical EV registration data, the objective is to predict the percentage of electric vehicles over time. This helps planners and governments anticipate demand for EV infrastructure, incentives, and energy distribution.
+With rising EV adoption, urban planners and governments need to predict demand for EV-related infrastructure.  
+This project analyzes EV registration data (state, county, date, vehicle type) to:
+
+- Understand current EV usage trends  
+- Prepare data for modeling  
+- Predict future EV adoption using ML models
 
 ---
 
 ## Dataset Description
 
-- **Source:** Cleaned dataset from Week 1  
-- **Format:** CSV  
-- **Features/Columns Include:**
+- **Source:** [Kaggle – Electric Vehicle Population Size 2024 Dataset]  
+- **Columns Include:**
   - Date
   - County
   - State
+  - Vehicle Type
   - Battery Electric Vehicles (BEVs)
   - Plug-In Hybrid Electric Vehicles (PHEVs)
-  - Electric Vehicle (EV) Total
+  - Electric Vehicle Total
   - Non-Electric Vehicle Total
   - Total Vehicles
-  - Percent of Electric Vehicles (Target)
+  - Percent Electric Vehicles
 
 ---
 
-## What’s Included
+## Week 1 – Data Cleaning & Analysis
 
-- `EV_Adoption_Forecasting.ipynb` – Notebook with forecasting model, data preprocessing, and results  
-- `preprocessed_ev_data.csv` – Cleaned dataset output from Week 1  
-- `forecasting_ev_model.pkl` – Trained regression model serialized using Pickle  
-- `README.md` – This file (documentation for Week 2 work)
+### 📘 Objective:
+- Analyze raw dataset, clean inconsistencies, fill missing values, and visualize trends.
+
+### 📁 Files in `week1/`:
+- `EV_Vehicle_Charging_Demand_Prediction.ipynb`  
+- `ev_charging_data.csv`  
+- `README.md`
+
+### ✅ Key Steps:
+- Missing value handling  
+- Data exploration  
+- Outlier detection using IQR  
+- Saving cleaned dataset for Week 2  
 
 ---
 
-## Steps Performed
+## Week 2 – EV Adoption Forecasting
 
-- Loaded cleaned dataset from Week 1  
-- Conducted data preprocessing and transformation  
-- Performed train-test split  
-- Trained Linear Regression model on target feature  
-- Visualized model performance and predictions  
-- Serialized the trained model using Pickle for future reuse
+### 📗 Objective:
+- Build a Linear Regression model to forecast the percentage of EV adoption over time.
+
+### 📁 Files in `week2/`:
+- `EV_Adoption_Forecasting.ipynb`  
+- `preprocessed_ev_data.csv`  
+- `forecasting_ev_model.pkl`  
+- `README.md`
+
+### ✅ Key Steps:
+- Feature engineering  
+- Model training using scikit-learn  
+- Model serialization using Pickle  
+- Forecast visualization
 
 ---
 
 ## How to Use
 
-1. Download the notebook, dataset, and `.pkl` model file.
-2. Open `EV_Adoption_Forecasting.ipynb` in [Google Colab](https://colab.research.google.com/) or Jupyter Notebook.
-3. Upload the `preprocessed_ev_data.csv` file when prompted.
-4. Run all notebook cells to visualize forecast results.
-5. Use the `forecasting_ev_model.pkl` model in other apps or dashboards for predictions.
+1. Clone or download this repository.
+2. Navigate to `week1/` or `week2/` folder.
+3. Open the corresponding `.ipynb` file using [Google Colab](https://colab.research.google.com/) or Jupyter Notebook.
+4. Upload the corresponding dataset when prompted.
+5. Run the notebook cells to perform analysis or forecasting.
+6. Use the `.pkl` model (Week 2) for external applications.
 
 ---
 
 ## Acknowledgements
 
-- **Dataset Source:** Prepared from Week 1 Dataset (originally from [Kaggle – EV Population Size 2024])  
-- **Guidance & Curriculum:** AICTE Skill4Future Internship  
-- **Mentor Reference:** Raghunandan Sir's GitHub repositories and walkthroughs
+- **Internship:** AICTE Skill4Future  
+- **Mentor:** Raghunandan Sir  
+- **Dataset:** [Kaggle – Electric Vehicle Population Size 2024 Dataset]  
+- **Tools Used:** Python, Pandas, Matplotlib, Seaborn, Scikit-learn, Google Colab, Pickle
 
-week2/
-├── EV_Adoption_Forecasting.ipynb       # Colab/Jupyter notebook for training & forecasting
-├── preprocessed_ev_data.csv            # Cleaned dataset used as input
-├── forecasting_ev_model.pkl            # Trained Linear Regression model (Pickle)
-└── README.md                           # Week 2 documentation
+---
+
+## 📂 Overall Project Structure
+
+```bash
+ev-charging-demand-prediction/
+├── week1/
+│   ├── EV_Vehicle_Charging_Demand_Prediction.ipynb
+│   ├── ev_charging_data.csv
+│   └── README.md
+│
+├── week2/
+│   ├── EV_Adoption_Forecasting.ipynb
+│   ├── preprocessed_ev_data.csv
+│   ├── forecasting_ev_model.pkl
+│   └── README.md
+│
+└── README.md   # This main project README file (You are reading it)
