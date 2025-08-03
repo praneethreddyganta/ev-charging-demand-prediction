@@ -126,8 +126,14 @@ ev-charging-demand-prediction/
 │   ├── EV_Adoption_Forecasting.ipynb
 │   ├── preprocessed_ev_data.csv
 │   ├── forecasting_ev_model.pkl
-│   ├── ev-car-factory.jpg
+│   └── README.md
+│
+├── final-week/
 │   ├── app.py
+│   ├── EV_Adoption_Forecasting.ipynb
+│   ├── preprocessed_ev_data.csv
+│   ├── forecasting_ev_model.pkl
+│   ├── ev-car-factory.jpg
 │   └── README.md
 │
 └── README.md   # This main project README file
