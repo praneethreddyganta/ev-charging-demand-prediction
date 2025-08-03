@@ -1,4 +1,4 @@
-# EV Charging Demand Prediction – Full Project
+# 🔋 EV Charging Demand Prediction – Full Project
 
 **EV_Vehicle_Charging_Demand_Prediction + EV_Adoption_Forecasting**
 
@@ -81,23 +81,35 @@ This project analyzes EV registration data (state, county, date, vehicle type) t
 
 ---
 
-## How to Use
+## 📊 Streamlit App (Final Week)
 
-1. Clone or download this repository.
-2. Navigate to `week1/` or `week2/` folder.
-3. Open the corresponding `.ipynb` file using [Google Colab](https://colab.research.google.com/) or Jupyter Notebook.
-4. Upload the corresponding dataset when prompted.
-5. Run the notebook cells to perform analysis or forecasting.
-6. Use the `.pkl` model (Week 2) for external applications.
+### 📘 Files:
+- `app.py`
+- `EV_Adoption_Forecasting.ipynb`
+- `forecasting_ev_model.pkl`
+- `preprocessed_ev_data.csv`
+- `ev-car-factory.jpg`
 
----
+### 📌 Features:
+- Forecast EV adoption for the **next 3 years**
+- Interactive **Streamlit dashboard** to visualize per-county trends
+- Compare EV adoption across multiple counties
+- View percentage growth and cumulative trends
+- Styled visualizations with dark theme
 
-## Acknowledgements
+### 🛠 Tech Stack:
+- Python
+- Streamlit
+- Pandas, NumPy
+- Matplotlib
+- Scikit-learn
+- Joblib
 
-- **Internship:** AICTE Skill4Future  
-- **Mentor:** Raghunandan Sir  
-- **Dataset:** [Kaggle – Electric Vehicle Population Size 2024 Dataset]  
-- **Tools Used:** Python, Pandas, Matplotlib, Seaborn, Scikit-learn, Google Colab, Pickle
+### ⚙️ Run Instructions:
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+```
 
 ---
 
@@ -114,6 +126,26 @@ ev-charging-demand-prediction/
 │   ├── EV_Adoption_Forecasting.ipynb
 │   ├── preprocessed_ev_data.csv
 │   ├── forecasting_ev_model.pkl
+│   ├── ev-car-factory.jpg
+│   ├── app.py
 │   └── README.md
 │
-└── README.md   # This main project README file (You are reading it)
+└── README.md   # This main project README file
+```
+
+---
+
+## 🙌 Acknowledgements
+
+- **Internship:** AICTE Skill4Future  
+- **Mentor:** Raghunandan Sir  
+- **Dataset:** [Kaggle – Electric Vehicle Population Size 2024 Dataset]  
+- **Tools Used:** Python, Pandas, Matplotlib, Seaborn, Scikit-learn, Google Colab, Pickle, Streamlit
+
+---
+
+## 👨‍💻 Contact
+
+**Ganta Praneeth Reddy**  
+🎓 B.E. CSE (AIML), CBIT  
+📧 praneethreddyganta@gmail.com
